@@ -12,6 +12,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: username/repo
-        TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: blog/.vuepress/dist/
+        TARGET_BRANCH: pub
+        BUILD_SCRIPT: yarn && yarn docs:bulid
+        BUILD_DIR: docs/.vuepress/dist/
